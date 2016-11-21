@@ -1,0 +1,15 @@
+//
+//		22: White Pelican
+//
+beats := 4
+tempo := 150
+pattern_1 := v.vn.nvn:v.v.v.v.
+pattern_2 := v.vn.nvn
+
+@2 { c - - - }
+{ d - - - }
+
+[3200] [3200] [3200] [3200] 
+D 2o 4o | 5 4 2o | A 0o 3o | 2 0 D 5 4 |
+D 2o 4o | 5 4 2o | A 0o 3o | 2 |
+

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="notebutton.svg"
+   inkscape:export-filename="C:\dulcimer-trainer\Graphics\notebutton.png"
+   inkscape:export-xdpi="40"
+   inkscape:export-ydpi="40">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3810">
+      <stop
+         style="stop-color:#999999;stop-opacity:1;"
+         offset="0"
+         id="stop3812" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3814" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3860">
+      <stop
+         style="stop-color:#808080;stop-opacity:1;"
+         offset="0"
+         id="stop3862" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3864" />
+    </linearGradient>
+    <filter
+       inkscape:menu-tooltip="Bright metallic effect for any color"
+       inkscape:menu="Bevels"
+       inkscape:label="Bright metal"
+       color-interpolation-filters="sRGB"
+       id="filter3013">
+      <feGaussianBlur
+         result="result6"
+         stdDeviation="8"
+         in="SourceGraphic"
+         id="feGaussianBlur3015" />
+      <feComposite
+         in2="SourceGraphic"
+         in="result6"
+         operator="xor"
+         result="result10"
+         id="feComposite3017" />
+      <feGaussianBlur
+         result="result2"
+         stdDeviation="8"
+         id="feGaussianBlur3019" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="atop"
+         in="result10"
+         result="result91"
+         id="feComposite3021" />
+      <feComposite
+         result="result4"
+         in="result2"
+         operator="xor"
+         in2="result91"
+         id="feComposite3023" />
+      <feGaussianBlur
+         in="result4"
+         result="result3"
+         stdDeviation="4"
+         id="feGaussianBlur3025" />
+      <feSpecularLighting
+         result="result5"
+         specularExponent="5"
+         specularConstant="1.1"
+         surfaceScale="18"
+         id="feSpecularLighting3027">
+        <feDistantLight
+           azimuth="235"
+           elevation="55"
+           id="feDistantLight3029" />
+      </feSpecularLighting>
+      <feComposite
+         in="result3"
+         k3="1.1"
+         k2="0.5"
+         operator="arithmetic"
+         result="result7"
+         in2="result5"
+         k1="0.5"
+         id="feComposite3031" />
+      <feComposite
+         in="result7"
+         operator="atop"
+         in2="SourceGraphic"
+         result="result8"
+         id="feComposite3033" />
+    </filter>
+    <filter
+       inkscape:menu-tooltip="Bright metallic effect for any color"
+       inkscape:menu="Bevels"
+       inkscape:label="Bright metal"
+       color-interpolation-filters="sRGB"
+       id="filter3037">
+      <feGaussianBlur
+         result="result6"
+         stdDeviation="8"
+         in="SourceGraphic"
+         id="feGaussianBlur3039" />
+      <feComposite
+         in2="SourceGraphic"
+         in="result6"
+         operator="xor"
+         result="result10"
+         id="feComposite3041" />
+      <feGaussianBlur
+         result="result2"
+         stdDeviation="8"
+         id="feGaussianBlur3043" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="atop"
+         in="result10"
+         result="result91"
+         id="feComposite3045" />
+      <feComposite
+         result="result4"
+         in="result2"
+         operator="xor"
+         in2="result91"
+         id="feComposite3047" />
+      <feGaussianBlur
+         in="result4"
+         result="result3"
+         stdDeviation="4"
+         id="feGaussianBlur3049" />
+      <feSpecularLighting
+         result="result5"
+         specularExponent="5"
+         specularConstant="1.1"
+         surfaceScale="18"
+         id="feSpecularLighting3051">
+        <feDistantLight
+           azimuth="235"
+           elevation="55"
+           id="feDistantLight3053" />
+      </feSpecularLighting>
+      <feComposite
+         in="result3"
+         k3="1.1"
+         k2="0.5"
+         operator="arithmetic"
+         result="result7"
+         in2="result5"
+         k1="0.5"
+         id="feComposite3055" />
+      <feComposite
+         in="result7"
+         operator="atop"
+         in2="SourceGraphic"
+         result="result8"
+         id="feComposite3057" />
+    </filter>
+    <filter
+       inkscape:menu-tooltip="Bright metallic effect for any color"
+       inkscape:menu="Bevels"
+       inkscape:label="Bright metal"
+       color-interpolation-filters="sRGB"
+       id="filter3013-1">
+      <feGaussianBlur
+         result="result6"
+         stdDeviation="8"
+         in="SourceGraphic"
+         id="feGaussianBlur3015-7" />
+      <feComposite
+         in2="SourceGraphic"
+         in="result6"
+         operator="xor"
+         result="result10"
+         id="feComposite3017-4" />
+      <feGaussianBlur
+         result="result2"
+         stdDeviation="8"
+         id="feGaussianBlur3019-0" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="atop"
+         in="result10"
+         result="result91"
+         id="feComposite3021-9" />
+      <feComposite
+         result="result4"
+         in="result2"
+         operator="xor"
+         in2="result91"
+         id="feComposite3023-4" />
+      <feGaussianBlur
+         in="result4"
+         result="result3"
+         stdDeviation="4"
+         id="feGaussianBlur3025-8" />
+      <feSpecularLighting
+         result="result5"
+         specularExponent="5"
+         specularConstant="1.10000002"
+         surfaceScale="18"
+         id="feSpecularLighting3027-8">
+        <feDistantLight
+           azimuth="235"
+           elevation="55"
+           id="feDistantLight3029-2" />
+      </feSpecularLighting>
+      <feComposite
+         k4="0"
+         in="result3"
+         k3="1.1"
+         k2="0.5"
+         operator="arithmetic"
+         result="result7"
+         in2="result5"
+         k1="0.5"
+         id="feComposite3031-4" />
+      <feComposite
+         in="result7"
+         operator="atop"
+         in2="SourceGraphic"
+         result="result8"
+         id="feComposite3033-5" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3129">
+      <rect
+         style="opacity:0.97000002;color:#000000;fill:none;stroke:#666666;stroke-width:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3131"
+         width="140"
+         height="490"
+         x="410"
+         y="212.36218"
+         ry="0" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3810"
+       id="linearGradient3816"
+       x1="105"
+       y1="487.36218"
+       x2="305"
+       y2="487.36218"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-7.2016253"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:url(#linearGradient3816);stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1.0"
+       d="m 110,432.36218 0,170 190,0 0,-169.99999 -100,-60.00001 z"
+       id="path3023"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="C:\dulcimer-trainer\Graphics\notebutton.png"
+       inkscape:export-xdpi="40"
+       inkscape:export-ydpi="40" />
+  </g>
+</svg>

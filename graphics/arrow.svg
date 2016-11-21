@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1878"
+   inkscape:export-ydpi="50.003246"
+   inkscape:export-filename="C:\Strumplay\Graphics\arrow.png"
+   viewBox="0 0 27.777 36.514"
+   sodipodi:version="0.32"
+   inkscape:export-xdpi="50.003246"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="arrow.svg"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient7614"
+       y2="541.27002"
+       gradientUnits="userSpaceOnUse"
+       x2="-171.94"
+       gradientTransform="matrix(0,-15.022431,4.2414192,0,-1932.1265,-2458.8867)"
+       y1="558.79999"
+       x1="-155.74001">
+      <stop
+         id="stop11464"
+         style="stop-color:#808080;stop-opacity:1;"
+         offset="0" />
+      <stop
+         id="stop11466"
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient7614-1"
+       y2="541.27002"
+       gradientUnits="userSpaceOnUse"
+       x2="-171.94"
+       gradientTransform="matrix(0,-15.022431,4.2414192,0,-1932.1265,-2458.8867)"
+       y1="558.79999"
+       x1="-155.74001">
+      <stop
+         id="stop11464-7"
+         style="stop-color:#808080;stop-opacity:1;"
+         offset="0" />
+      <stop
+         id="stop11466-4"
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="541.27002"
+       x2="-171.94"
+       y1="558.79999"
+       x1="-155.74001"
+       gradientTransform="matrix(0,-15.022431,4.2414192,0,-2278.215,-2306.683)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3002"
+       xlink:href="#linearGradient7614-1"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7614"
+       id="linearGradient3796"
+       x1="173.71223"
+       y1="5.2279849"
+       x2="277.87964"
+       y2="5.2279849"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7614"
+       id="linearGradient3798"
+       x1="-30.774998"
+       y1="-27.167946"
+       x2="87.651459"
+       y2="-27.167946"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.81503064,0,0,0.81503064,16.212834,5.927395)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:window-x="743"
+     inkscape:window-y="45"
+     pagecolor="#ffffff"
+     width="283.23425px"
+     inkscape:zoom="1.095627"
+     inkscape:pageshadow="2"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="-191.85751"
+     inkscape:cy="123.18962"
+     inkscape:window-width="986"
+     height="200px"
+     inkscape:pageopacity="0.0"
+     inkscape:window-height="739"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-maximized="0" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-347.89 -131.64)">
+    <path
+       id="path10085"
+       sodipodi:nodetypes="cccccccc"
+       style="color:#000000;fill:url(#linearGradient3796);fill-opacity:1.0;stroke:#1a1a1a;stroke-width:8.00000001000000080;stroke-linejoin:round;stroke-opacity:1"
+       d="m 177.71224,-26.285714 h 19.73612 V 161.2702 h 56.54733 V -26.285714 h 19.88396 L 225.72203,-150.81423 177.71224,-26.285714 z"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Projects\the-music-trainer\Graphics\arrow.png"
+       inkscape:export-xdpi="50.003246"
+       inkscape:export-ydpi="50.003246" />
+    <rect
+       style="opacity:0.97000002;color:#000000;fill:url(#linearGradient3798);fill-opacity:1;fill-rule:nonzero;stroke:#1a1a1a;stroke-width:6.52024508;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect2986"
+       width="90.000946"
+       height="90.000946"
+       x="-5.6096101"
+       y="-61.215786"
+       ry="22.316828"
+       inkscape:export-xdpi="50.003246"
+       inkscape:export-ydpi="50.003246"
+       inkscape:export-filename="C:\Projects\the-music-trainer\Graphics\button.png" />
+  </g>
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2008-01-29T13:03:25</dc:date>
+        <dc:description>Kuba's green arrows set, put into separate files.</dc:description>
+        <dc:source>https://openclipart.org/detail/12139/green-arrows-set-by-pitr-12139</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>pitr</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>arrow</rdf:li>
+            <rdf:li>collection</rdf:li>
+            <rdf:li>glossy</rdf:li>
+            <rdf:li>green</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>remix</rdf:li>
+            <rdf:li>set</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
