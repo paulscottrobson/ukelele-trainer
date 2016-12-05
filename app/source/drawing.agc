@@ -15,7 +15,7 @@ function DRAWFretboard()
 	SetSpriteSize(SPR_FRETBOARD,ctl.screenWidth,ctl.fretHeight)
 	SetSpritePosition(SPR_FRETBOARD,0,ctl.fretY)
 	for s = 1 to 4																						// Draw 4 strings (2 melody)
-		CreateSprite(SPR_STRING+s,IMG_STRING)
+		CreateSprite(SPR_STRING+s,IMG_MSTRING)
 		SetSpriteDepth(SPR_STRING+s,DEPTH_FRETBOARD+4)
 		SetSpriteSize(SPR_STRING+s,ctl.screenWidth,ctl.screenHeight*1/100+s*2)
 		SetSpritePosition(SPR_STRING+s,0,__DRAWGetStringY(s))
@@ -77,9 +77,9 @@ function __DRAWDrawBar(song ref as Song,bar as integer)
 			CreateSprite(id,IMG_ARROW)
 			SetSpriteSize(id,ctl.barWidth/8,ctl.fretHeight*70/100)
 			SetSpriteDepth(id,DEPTH_BAR+1)
-			SetSpriteFlip(id,0,1)
+			SetSpriteFlip(id,0,0)
 			if song.bars[bar].notes[n].isUpStroke <> 0 													// Handle up/toward strum
-				SetSpriteFlip(id,0,0)
+				SetSpriteFlip(id,0,1)
 				SetSpriteSize(id,ctl.barWidth/8,ctl.fretHeight*55/100)
 			endif
 			s$ = song.bars[bar].notes[n].name$															// Set name
@@ -220,7 +220,7 @@ endfunction
 function __DRAWGetStringY(s as integer)
 	y = ctl.fretY + ctl.fretHeight / 2																	// Work out centre
 	if ctl.flipFretboard <> 0 then flip = -1 else flip = 1 												// Flip Fretboard
-	y = y - (s - 2.5) * flip * ctl.fretHeight * 20 / 100													// Adjust by fret
+	y = y + (s - 2.5) * flip * ctl.fretHeight * 20 / 100													// Adjust by fret
 endfunction y
 	
 // ****************************************************************************************************************************************************************

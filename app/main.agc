@@ -24,8 +24,8 @@
 #include "source\chord.agc"
 #include "source\chordctl.agc"
 
-#constant BUILD_NUMBER	(16)
-#constant BUILD_DATE 	("21 Nov 2016")
+#constant BUILD_NUMBER	(17)
+#constant BUILD_DATE 	("27 Nov 2016")
 
 COMSetup()																							// Set up common constants etc
 PANELInitialise()																					// Initialise the panel
@@ -49,7 +49,7 @@ function PlayOneSong(songFile$ as String)
 	lastPosition# = 0.0
 	lastTime = GetMilliseconds()																	// Time last loop
 	exitFlag = 0																					// Set when completed
-	ctl.tempoAdjust = 0 																			// Clear any tempo adjustments
+	ctl.tempoPercent = 100 																			// Clear any tempo adjustments
 	cdNow as ChordView																				// Set up chords
 	cdNext as ChordView
 	CHCTLSetup(song,cdNow,cdNext)
@@ -66,11 +66,12 @@ function PlayOneSong(songFile$ as String)
 
 		elapsed# = (GetMilliseconds() - lastTime) / 1000.0											// Elapsed time in seconds
 		lastTime = GetMilliseconds()																// Track last time
-		tempo = song.tempo + ctl.tempoAdjust														// Work out adjusted tempo
+		tempo = song.tempo 																			// Work out tempo, minimal 30 bps
 		if tempo < 30 then tempo = 30
-		beats# = tempo / 60.0 														 				// Convert beats / minute to beats / second.
+		beats# = tempo / 60.0  														 				// Convert beats / minute to beats / second.
 		beats# = beats# / song.beats 																// Now bars per second
-		METSetTempo(tempo)
+		beats# = beats# * ctl.tempoPercent / 100.0 													// Scale for tempo
+		METSetTempo(ctl.tempoPercent)
 		if ctl.isRunning
 			position# = position# + beats# * elapsed# 												// Adjust position if not paused
 		endif
@@ -79,8 +80,9 @@ function PlayOneSong(songFile$ as String)
 		if position# < 1.0 then position# = 1.0
 		TRACKReposition((position# - 1.0) * 100.0 / song.barCount)									// Position tracker bar
 		position# = PANELClick(song,GetPointerPressed(),GetPointerX(),GetPointerY(),position#)
-		if position# = 1.0 and song.chordCount > 0 then CHCTLSetChord(song,1,cdNow,cdNext)
-		if position# < 0 
+		if position# = 1.0 and song.chordCount > 0 then CHCTLSetChord(song,1,cdNow,cdNext)			// Reset to start, set up chord
+
+		if position# < 0 																			// Exit if position set to -1.
 			position# = 1
 			exitFlag = 1
 		endif
@@ -97,9 +99,11 @@ function PlayOneSong(songFile$ as String)
 		else
 			CHCTLUpdate(song,position#,0,cdNow,cdNext)
 		endif
+
 		MGRMove(song,position#,lastPosition#)														// Move to current position
 		lastPosition# = position#
-		ShowDebug()
+
+		//ShowDebug()
 		Sync()
 	endwhile
 	
@@ -110,3 +114,9 @@ function PlayOneSong(songFile$ as String)
 		Sync()
 	endwhile
 endfunction
+
+// ****************************************************************************************************************************************************************
+//
+//	27/11/16: 	Change metronome controls to percentage of provided speed.
+//
+// ****************************************************************************************************************************************************************

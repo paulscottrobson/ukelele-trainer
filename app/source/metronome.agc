@@ -25,8 +25,8 @@ function METInitialise()
 	METSetTempo(100)
 endfunction
 
-function METSetTempo(tempo as integer)
-	SetTextString(TXT_BPM,str(tempo)+" bpm")
+function METSetTempo(percent as integer)
+	SetTextString(TXT_BPM,str(percent)+" %")
 	SetTextPosition(TXT_BPM,ctl.screenWidth*0.85-GetTextTotalWidth(TXT_BPM)/2,ctl.fretY-GetSpriteHeight(SPR_METRONOME)*0.8)
 endfunction
 

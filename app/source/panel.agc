@@ -71,15 +71,17 @@ function PANELClick(song ref as Song,click as integer,x as integer,y as integer,
 			endcase
 
 			case "FAS"
-				ctl.tempoAdjust = ctl.tempoAdjust + 10
+				ctl.tempoPercent = ctl.tempoPercent + 5
+				if ctl.tempoPercent > 400 then ctl.tempoPercent = 400
 			endcase
 
 			case "NOR"
-				ctl.tempoAdjust = 0
+				ctl.tempoPercent = 100
 			endcase
 					
 			case "SLO"
-				ctl.tempoAdjust = ctl.tempoAdjust - 10
+				ctl.tempoPercent = ctl.tempoPercent - 5
+				if ctl.tempoPercent < 25 then ctl.tempoPercent = 25
 			endcase
 			
 			case "PLA"

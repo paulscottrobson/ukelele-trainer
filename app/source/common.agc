@@ -33,6 +33,7 @@
 #constant IMG_METRONOME 	(112)
 #constant IMG_ICONBOX 		(113)
 #constant IMG_ARROW 		(114)
+#constant IMG_MSTRING 		(115)
 
 #constant SPR_FRETBOARD		(100)
 #constant SPR_STRING 		(101)																		// Allow 9
@@ -85,7 +86,7 @@ type Constants																							// Control constants
 	barX,barWidth as integer 																			// Bar origin and width
 	sineY,sineHeight as integer 																		// Curve position
 	trackerY,trackerMargin as integer 																	// Tracker position
-	tempoAdjust as integer 																				// Tempo adjustments bpm
+	tempoPercent as integer 																			// Tempo adjustments %
 	flipFretboard as integer 																			// Flip Fretboard ?
 endtype
 
@@ -187,14 +188,14 @@ function COMSetup()
 	ctl.musicOn = 1																					// Controls
 	ctl.metronomeOn = 1
 	ctl.isRunning = 1
-	ctl.tempoAdjust = 0 
+	ctl.tempoPercent = 100 
 	
 	OpenToRead(1,"flipfretboard.txt")																// Check if flipped.
 	a$ = ReadLine(1)
 	CloseFile(1)	
 	ctl.flipFretboard = asc(lower(a$)) = asc("y")
 	
-	SetWindowTitle("Ukulele Trainer : build "+str(BUILD_NUMBER)+" ("+BUILD_DATE+")")				// Screen set up
+	SetWindowTitle("Mandolin Trainer : build "+str(BUILD_NUMBER)+" ("+BUILD_DATE+")")				// Screen set up
 	LoadImages()																					// Load in all used images
 	SetWindowSize(ctl.screenWidth,ctl.screenHeight,0)
 	SetVirtualResolution(ctl.screenWidth,ctl.screenHeight)
@@ -223,5 +224,6 @@ function LoadImages()
 	LoadImage(IMG_METRONOME,GFXDIR+"metronome.png")
 	LoadImage(IMG_ICONBOX,GFXDIR+"icon_frame.png")
 	LoadImage(IMG_ARROW,GFXDIR+"arrow.png")
+	LoadImage(IMG_MSTRING,GFXDIR+"mstring.png")
 	SetTextDefaultFontImage(LoadImage(GFXDIR+"font.png"))											// Standard Font
 endfunction

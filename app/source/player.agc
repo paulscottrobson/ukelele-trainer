@@ -29,7 +29,7 @@ function PLAYSetup(song ref as Song)
 	LoadSound(SND_METRONOME,SFXDIR+"metronome.wav")														// Load metronome sound
 	for s = 1 to song.strings 																			// For each of 4 strings
 		base = (s-1) * 15 + 1
-		baseNote = Val(GetStringToken("8,1,5,10",",",s)) 												// Get base string GCEA		
+		baseNote = (song.strings-s) * 7+1 	
 		for n = 0 to 14 																				// 20 chromatic notes
 			LoadSoundOGG(base+n,SFXDIR+str(baseNote+n)+".ogg")
 		next n
@@ -54,7 +54,7 @@ function PLAYUpdate(song ref as Song,position# as float,lastPosition# as float)
 			for s = 1 to song.strings																	// Work through strings
 				chromatic = song.bars[bar].notes[n].fret[s]												// Get chromatic value
 				if chromatic <> 99																		// If plucked/strummed.					
-					__PLAYChannels[s].nextFire = GetMilliseconds()+(song.strings+1-s)*20				// Fire strings
+					__PLAYChannels[s].nextFire = GetMilliseconds()+(song.strings+1-s)*30				// Fire strings
 					__PLAYChannels[s].nextNoteID = chromatic + __PLAYChannels[s].baseSoundID					
 					//debug$ = debug$ + str(bar)+" "+str(s)+" "+str(chromatic)+"&"
 				endif
