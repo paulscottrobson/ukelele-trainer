@@ -15,9 +15,9 @@ function DRAWFretboard()
 	SetSpriteSize(SPR_FRETBOARD,ctl.screenWidth,ctl.fretHeight)
 	SetSpritePosition(SPR_FRETBOARD,0,ctl.fretY)
 	for s = 1 to 4																						// Draw 4 strings (2 melody)
-		CreateSprite(SPR_STRING+s,IMG_MSTRING)
+		CreateSprite(SPR_STRING+s,IMG_STRING)
 		SetSpriteDepth(SPR_STRING+s,DEPTH_FRETBOARD+4)
-		SetSpriteSize(SPR_STRING+s,ctl.screenWidth,ctl.screenHeight*1/100+s*2)
+		SetSpriteSize(SPR_STRING+s,ctl.screenWidth,ctl.screenHeight*1/100)
 		SetSpritePosition(SPR_STRING+s,0,__DRAWGetStringY(s))
 	next s
 	CreateSprite(SPR_BALL,IMG_REDSPHERE)																// Create bouncing ball sprite
@@ -171,15 +171,18 @@ function DRAWMoveBar(song ref as Song,bar as integer,x as integer)
 	
 	for n = 1 to song.bars[bar].noteCount 												
 		xc = x + song.bars[bar].notes[n].time * ctl.barWidth / 1000 									// Base position
-
+		alpha = __DRAWGetAlpha(xc)
 		if song.bars[bar].isStrummed = 0
-			for s = 1 to song.strings																		// Note boxes
+			for s = 1 to song.strings																	// Note boxes
 				yc = __DRAWGetStringY(s)
 				id = baseID + n * 10 + s
 				if song.bars[bar].notes[n].fret[s] <> 99
 					if song.bars[bar].notes[n].isUpStroke then p = 50 else p = 50
 					SetSpritePosition(id,xc-GetSpriteWidth(id)/2,yc-GetSpriteHeight(id)*p/100)
 					SetTextPosition(id,xc-GetTextTotalWidth(id)/2,yc-GetTextTotalHeight(id)/2)
+					SetSpriteColorAlpha(id,alpha)
+					SetTextColorAlpha(id,alpha)
+					if xc < ctl.barX then SetSpriteColor(id,64,64,64,255)
 				endif
 			next s
 		else																							// Strum
@@ -187,6 +190,9 @@ function DRAWMoveBar(song ref as Song,bar as integer,x as integer)
 			yc = ctl.fretY + ctl.fretHeight / 2
 			SetSpritePosition(id,xc-GetSpriteWidth(id)/2,yc-GetSpriteHeight(id)/2)
 			SetTextPosition(id,xc-GetTextTotalWidth(id)/2,yc-GetTextTotalHeight(id)/2)
+			SetSpriteColorAlpha(id,alpha)
+			SetTextColorAlpha(id,alpha)
+			if xc < ctl.barX then SetSpriteColor(id,64,64,64,255)
 		endif
 	next n
 
@@ -201,6 +207,17 @@ function DRAWMoveBar(song ref as Song,bar as integer,x as integer)
 	
 	song.bars[bar].xPosition = x																		// Save X position	
 endfunction
+
+// ****************************************************************************************************************************************************************
+//																Get Alpha for horizontal position
+// ****************************************************************************************************************************************************************
+
+function __DRAWGetAlpha(x as integer)
+	alpha = 255
+	if x < ctl.barX
+		alpha = 255-(ctl.barX-x)/2
+	endif
+endfunction alpha
 
 // ****************************************************************************************************************************************************************
 //																			Erase all bar stuff
@@ -220,7 +237,7 @@ endfunction
 function __DRAWGetStringY(s as integer)
 	y = ctl.fretY + ctl.fretHeight / 2																	// Work out centre
 	if ctl.flipFretboard <> 0 then flip = -1 else flip = 1 												// Flip Fretboard
-	y = y + (s - 2.5) * flip * ctl.fretHeight * 20 / 100													// Adjust by fret
+	y = y - (s - 2.5) * flip * ctl.fretHeight * 20 / 100													// Adjust by fret
 endfunction y
 	
 // ****************************************************************************************************************************************************************

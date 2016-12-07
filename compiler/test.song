@@ -5,9 +5,12 @@ beats := 4
 tempo := 150
 pattern_1 := v.vn.nvn:v.v.v.v.
 pattern_2 := vnvnvnvn
+chord_C := 0003
+chord_G := 0232
+chord_Am := 2000
 
-G0D0A0E0|
-{C} @1 {D} {G} Hello world|This is|me|{4A7}I @2 like chips
+G0C0E0A0|
+{C} @1 {G} Hello world|This is|me|{4Am}I @2 like chips
 [3200]|
 
 

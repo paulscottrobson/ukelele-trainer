@@ -31,8 +31,8 @@ class SongCompiler:
 				#print("**** "+bar+" ****")
 				bar = self.processLyrics(bar).strip()
 				while bar != "":														# something to do.
-					if "eadg".find(bar[0]) >= 0:										# is it to switch string.
-						self.currentString = "eadg".find(bar[0])+1
+					if "gcea".find(bar[0]) >= 0:										# is it to switch string.
+						self.currentString = "gcea".find(bar[0])+1
 						bar = bar[1:]
 					elif fretDecode.find(bar[0]) >= 0:									# is it a note ?
 						note = [None,None,None,None]									# create the note

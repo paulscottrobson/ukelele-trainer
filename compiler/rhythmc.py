@@ -138,11 +138,4 @@ class RhythmCompiler:
 
 
 	def setupStandardChords(self):
-		std = """
-			G=3200 C=0320 D7=2302 G7=1200 D=2002 A7=0056
-		""".lower().split()
 		self.library = {}
-		for s in std:
-			s1 = s.split("=")
-			self.library[s1[0].strip()] = s1[1].strip()
-		#print(self.library)

@@ -24,16 +24,16 @@
 #include "source\chord.agc"
 #include "source\chordctl.agc"
 
-#constant BUILD_NUMBER	(17)
-#constant BUILD_DATE 	("27 Nov 2016")
+#constant BUILD_NUMBER	(21)
+#constant BUILD_DATE 	("7 Dec 2016")
 
 COMSetup()																							// Set up common constants etc
 PANELInitialise()																					// Initialise the panel
 TRACKInitialise()																					// Initialise drag track
 METInitialise()																						// Initialise metronome
 DRAWFretboard()																						// Draw the Fretboard
-SELSelectAndRun()
-//PlayOneSong("test2.music")
+//SELSelectAndRun()
+PlayOneSong("test2.music")
 
 // ****************************************************************************************************************************************************************
 //																			Play a single song
@@ -118,5 +118,6 @@ endfunction
 // ****************************************************************************************************************************************************************
 //
 //	27/11/16: 	Change metronome controls to percentage of provided speed.
+//	07/12/16: 	Ukulele conversion. Effects after passing play point (fading, grey)
 //
 // ****************************************************************************************************************************************************************

@@ -29,7 +29,7 @@ function PLAYSetup(song ref as Song)
 	LoadSound(SND_METRONOME,SFXDIR+"metronome.wav")														// Load metronome sound
 	for s = 1 to song.strings 																			// For each of 4 strings
 		base = (s-1) * 15 + 1
-		baseNote = (song.strings-s) * 7+1 	
+		baseNote = Val(GetStringToken("8,1,5,10",",",s))													// Tuning GCEA
 		for n = 0 to 14 																				// 20 chromatic notes
 			LoadSoundOGG(base+n,SFXDIR+str(baseNote+n)+".ogg")
 		next n

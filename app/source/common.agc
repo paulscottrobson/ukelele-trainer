@@ -176,7 +176,7 @@ endtype
 function COMSetup()
 	ctl.screenWidth = 1024																			// Screen size
 	ctl.screenHeight = 768
-	ctl.barX = 140
+	ctl.barX = 190
 	ctl.barWidth = 530
 	ctl.fretY = 280																					// Fretboard position
 	ctl.fretHeight = 380
@@ -195,7 +195,7 @@ function COMSetup()
 	CloseFile(1)	
 	ctl.flipFretboard = asc(lower(a$)) = asc("y")
 	
-	SetWindowTitle("Mandolin Trainer : build "+str(BUILD_NUMBER)+" ("+BUILD_DATE+")")				// Screen set up
+	SetWindowTitle("Ukulele Trainer : build "+str(BUILD_NUMBER)+" ("+BUILD_DATE+")")				// Screen set up
 	LoadImages()																					// Load in all used images
 	SetWindowSize(ctl.screenWidth,ctl.screenHeight,0)
 	SetVirtualResolution(ctl.screenWidth,ctl.screenHeight)

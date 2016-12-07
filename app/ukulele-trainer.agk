@@ -55,13 +55,14 @@ FILE_13=source%2Fchord.agc;-1
 FILE_14=source%2Fchordctl.agc;-1
 
 [files]
-FILE_NAME_0=1;main.agc;4715;0
+FILE_NAME_0=1;main.agc;5192;0
 FILE_NAME_1=0;source%2Fpanel.agc;4076;5
-FILE_NAME_2=0;source%2Fcommon.agc;9376;1
+FILE_NAME_2=0;source%2Fcommon.agc;8873;1
 FILE_NAME_3=0;source%2Fsong.agc;5002;3
-FILE_NAME_4=0;source%2Fdrawing.agc;1170;2
+FILE_NAME_4=0;source%2Fdrawing.agc;7064;2
 FILE_NAME_5=0;source%2Fmetronome.agc;1694;6
-FILE_NAME_6=0;source%2Fchord.agc;3867;4
+FILE_NAME_6=0;source%2Fplayer.agc;2038;7
+FILE_NAME_7=0;source%2Fchord.agc;4427;4
 
 [project]
 description=
